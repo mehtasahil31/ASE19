@@ -1,4 +1,3 @@
-import csv101
 import re
 
 class Tbl():
@@ -64,13 +63,21 @@ class Tbl():
 	
 	def filter(self):
 		
-		rows = self.Rows["cells"]
-		columns = self.rows["cells"][0]
-		for i,r in enumerate(rows):
-			if '?' in r:
-				self.rows["cells"].pop(i)
-			if len(r) < columns:
-				self.rows["cells"][i] = ["E"]
+		rows = self.Row["cells"]
+		columns = self.Row["cells"][0]
+		dropCols = [c for c in range(len(columns)) if '?' in columns[c]]
+		for index in sorted(dropCols, reverse=True):
+			columns.pop(index)
+		
+		for r in range(len(rows[1:])):
+			for index in sorted(dropCols, reverse=True):
+				self.Row["cells"].pop(index)
+			#if '?' in rows[r]:
+			#	self.Row["cells"].pop(i)
+			if len(rows[r]) < columns:
+				self.Row["cells"][i] = ["E"]
+			if not row[r]:
+				self.Row["cells"].pop(r)
 	 
 				
 				
