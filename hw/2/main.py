@@ -2,10 +2,11 @@ from Tbl import Tbl
 from Row import Row
 from Num import Num
 
+
 def main(part):
 
     if part == 1:
-        s ="""
+        s = """
         $cloudCover, $temp, $humid, $wind,  $playHours
         100, 68, 80, 0, 3
         0, 85, 85, 0, 0
@@ -65,7 +66,7 @@ def main(part):
 
         s = """
         $cloudCover, $temp, $humid, $wind,  $playHours
-        100,         68,    80,     0,      3   
+        100,         68,    80,     0,      3
         0,           85,    85,     0,      0
         0,           80,    90,     10,     0
         60,          83,    86,     0,      4
@@ -84,27 +85,23 @@ def main(part):
         tbl = Tbl(s)
         count_tbl = 1
         data = list(tbl.fromString(s))
-
+        f = open("outpart3.txt", "w+")
         for i in range(len(data)):
             row = data[i]
-            if isinstance(row, list):
-                if i == 0:
-                    for j in range(len(row)):
-                        tbl.cols.append(Num(count_tbl, j + 1, row[j], 0, 0, 0))
-                        count_tbl += 1
-                    tbl.rows.append(row)
-
-                else:
-                    row_for_tbl = []
-                    for j in range(len(row)):
-                        if row[j] == '?':
-                            row[j] = tbl.cols[j].mean
-
-                        tbl.cols[j].addToNum(row[j])
-                        tbl.cols[j].updateMeanAndSdAdd(row[j])
-                        row_for_tbl.append(row[j])
-                    tbl.rows.append(Row(count_tbl, row_for_tbl))
+            if i == 0:
+                for j in range(len(row)):
+                    tbl.cols.append(Num(j + 1, count_tbl, row[j]))
                     count_tbl += 1
+            else:
+                table = []
+                for j in range(len(row)):
+                    if row[j] == '?':
+                        row[j] = tbl.cols[j].mean
+                    tbl.cols[j].Num1(row[j])
+                    # tbl.cols[j].updateMeanAndSdAdd(row[j])
+                    table.append(row[j])
+                # tbl.rows.append(Row(count_tbl, table))
+                count_tbl += 1
 
         f.write("t.cols\n")
         k = 1
@@ -115,21 +112,27 @@ def main(part):
             f.write("| | hi: " + str(i.hi) + "\n")
             f.write("| | lo: " + str(i.lo) + "\n")
             f.write("| | m2: " + str(i.m2) + "\n")
-            f.write("| | mu: " + str(i.mean) + "\n")
-            f.write("| | n: " + str(i.count) + "\n")
+            f.write("| | mu: " + str(i.mu) + "\n")
+            f.write("| | n: " + str(i.n) + "\n")
             f.write("| | oid: " + str(i.oid) + "\n")
             f.write("| | sd: " + str(i.sd) + "\n")
             f.write("| | txt: " + str(i.txt) + "\n")
             k += 1
         k = 1
-        f.write("t.oid" + str(tbl.oid) + "\n")
+        f.write("t.oid: " + str(k) + "\n")
         f.write("t.rows\n")
-        for i in range(1, len(tbl.rows)):
+        for i in tbl.Rows['cells'][1:]:
             f.write("| " + str(k) + "\n")
             f.write("| | cells\n")
-            f.write("| | | " + ', '.join([str(elem) for elem in tbl.rows[i].lst]) + "\n")
-            f.write("| | oid: " + str(tbl.rows[i].oid) + "\n")
+            for j in range(len(i)):
+                f.write("| | | " + str(j+1) + ":" + str(i[j]) + "\n")
+            f.write("| | cooked\n")
+            f.write("| | dom: 0\n")
+            f.write("| | oid: " + str(k) + "\n")
+            k += 1
+
+        f.close()
 
 
-for i in [1, 2, 3]:
-    main(i)
+for m in [1, 2, 3]:
+    main(m)

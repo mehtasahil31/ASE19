@@ -1,9 +1,11 @@
 import random
 
+
 class Col:
     # Initializing
     def __init__(self):
         self.n = 0
+
 
 class Num(Col):
 
@@ -25,6 +27,7 @@ class Num(Col):
         self.mu += d/self.n
         self.m2 += d*(v - self.mu)
         self.sd = self._NumSd()
+        print(str(v) + " -v")
         return v
 
     # Standard deviation helper function
@@ -33,6 +36,7 @@ class Num(Col):
             return 0
         if self.n < 2:
             return 0
+        print(str((self.m2/(self.n-1))**0.5) + " -sd")
         return (self.m2/(self.n-1))**0.5
 
     # Normalizing the numbers
@@ -55,11 +59,14 @@ class Num(Col):
         self.sd = self._NumSd()
         return v
 
+
 class Sym(Col):
     pass
 
+
 class Some(Col):
     pass
+
 
 if __name__ == "__main__":
 
@@ -103,7 +110,7 @@ if __name__ == "__main__":
 
     for i in range(len(sd_inc)):
         f.write("\n")
-        f.write("| " +'{:.3f}'.format(mu_inc[i]) + " |" + '{:.3f}'.format(sd_inc[i]) + "|  " + '{:.3f}'.format(mu_dec[i]) + "  | " + '{:.3f}'.format(sd_dec[i]) + " |")
+        f.write("| " + '{:.3f}'.format(mu_inc[i]) + " |" + '{:.3f}'.format(sd_inc[i]) + "|  " + '{:.3f}'.format(mu_dec[i]) + "  | " + '{:.3f}'.format(sd_dec[i]) + " |")
 
     f.close()
 
