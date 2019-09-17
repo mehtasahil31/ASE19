@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74819229-77fa-4a05-89d5-47e29b6b77d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hw/2/Col.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw/4/Abcd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CSC-591-ASE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CSC-591-ASE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/1/hw1.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw/1/hw1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/1/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw/1/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/2/Num.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw/2/Num.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/2/Tbl.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw/2/Tbl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw/2/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/2/outpart3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw/2/outpart3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/2/part1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/3/abcd.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw/3/abcd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/3/outpart2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw/3/outpart2.txt" afterDir="false" />
-    </list>
+    <list default="true" id="74819229-77fa-4a05-89d5-47e29b6b77d3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +29,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hw/2/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="186">
@@ -56,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hw/2/outpart3.txt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw/1/hw1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+            <state relative-caret-position="369">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -179,6 +164,12 @@
               <item name="CSC-591-ASE" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSC-591-ASE" type="462c0819:PsiDirectoryNode" />
               <item name="hw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-591-ASE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-591-ASE" type="462c0819:PsiDirectoryNode" />
+              <item name="hw" type="462c0819:PsiDirectoryNode" />
+              <item name="1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CSC-591-ASE" type="b2602c69:ProjectViewProjectNode" />
@@ -362,19 +353,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568644620321</updated>
-      <workItem from="1568644623038" duration="13667000" />
+      <workItem from="1568644623038" duration="13978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13667000" />
+    <option name="totallyTimeSpent" value="13978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -384,7 +375,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2897959" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2897959" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3989796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -480,13 +471,6 @@
     <entry file="file://$PROJECT_DIR$/hw/3/outpart3.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hw/1/hw1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ASE19/hw/2/Tbl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-301">
@@ -544,13 +528,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hw/2/main.py">
+    <entry file="file://$PROJECT_DIR$/hw/1/hw1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="115" column="48" lean-forward="true" selection-start-line="115" selection-start-column="48" selection-end-line="115" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="369">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
@@ -558,6 +539,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/2/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="115" column="48" lean-forward="true" selection-start-line="115" selection-start-column="48" selection-end-line="115" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
