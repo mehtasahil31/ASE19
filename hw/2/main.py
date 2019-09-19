@@ -98,9 +98,7 @@ def main(part):
                     if row[j] == '?':
                         row[j] = tbl.cols[j].mean
                     tbl.cols[j].Num1(row[j])
-                    # tbl.cols[j].updateMeanAndSdAdd(row[j])
                     table.append(row[j])
-                # tbl.rows.append(Row(count_tbl, table))
                 count_tbl += 1
 
         f.write("t.cols\n")

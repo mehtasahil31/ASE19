@@ -3,7 +3,10 @@ import math
 
 class Sym(Col):
 
-    def __init__(self):
+    def __init__(self, pos, oid, txt):
+        self.oid = oid
+        self.pos = pos
+        self.txt = txt
         self.mode = ""
         self.most = 0
         self.cnt = {}
@@ -30,7 +33,7 @@ class Sym(Col):
 
 input = ['a', 'a', 'a', 'a', 'b', 'b', 'c']
 
-s = Sym()
+s = Sym(0, 0, 0)
 
 for i in input:
     s.Sym1(i)
