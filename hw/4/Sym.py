@@ -1,43 +1,58 @@
 from Col import Col
 import math
+import collections
+
 
 class Sym(Col):
 
-    def __init__(self, pos, oid, txt):
-        self.oid = oid
-        self.pos = pos
-        self.txt = txt
+    def __init__(self):
         self.mode = ""
         self.most = 0
-        self.cnt = {}
-        self.count = 0
+        self.cnt = collections.defaultdict(int)
+        self.e = 0
+        self.n = 0
+        self.col = []
 
-    def Sym1(self, v):
-        self.count += 1
-        if v not in self.cnt:
-            self.cnt[v] = 0
-        self.cnt[v] += 1
+    def Sym1(self, column):
+        self.__init__()
+        for element in column:
+            self.n += 1
+            self.cnt[element] += 1
+            tmp = self.cnt[element]
+            if tmp > self.most:
+                self.most = tmp
+                self.mode = element
+        self.e = self.symEnt(len(column))
+        return self.e
 
-        temp = self.cnt[v]
-        if temp > self.most:
-            self.most = temp
-            self.mode = v
+    def symEnt(self, n):
+        e = 0
+        for element in self.cnt:
+            p = self.cnt[element] / n
+            e -= p * (math.log(p) / math.log(2))
+        return e
 
-    def SymEnt(self):
-        entropy = 0.0
-        for i in self.cnt:
-            p = self.cnt[i] / self.count
-            entropy -= p * math.log(p) / math.log(2)
-        return entropy
+    def Sym2(self, val):
+        self.n += 1
+        self.cnt[val] += 1
+        tmp = self.cnt[val]
+        if tmp > self.most:
+            self.most = tmp
+            self.mode = val
+        self.col.append(val)
+        self.e = self.symEnt2()
+        return self.e
 
+    def symEnt2(self):
+        e = 0
+        for element in self.cnt:
+            p = self.cnt[element] / len(self.col)
+            if p:
+                e -= p * (math.log(p) / math.log(2))
+        return e
 
-input = ['a', 'a', 'a', 'a', 'b', 'b', 'c']
-
-s = Sym(0, 0, 0)
-
-for i in input:
-    s.Sym1(i)
-
-f = open("outpart1.txt", "w+")
-f.write(str(s.SymEnt()))
-f.close()
+    def SymLike(self, x, prior, m, l, cls):
+        f = self.cnt[x]
+        if cls == l:
+            self.Sym2(x)
+        return (f + m * prior) / (self.n + m)

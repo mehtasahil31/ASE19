@@ -2,123 +2,120 @@ import re
 import zipfile
 
 
-class Tbl():
+class Tbl:
 
-    def __init__(self, s):
-        self.Rows = {'cells': self.create_rows(s), 'cooked': []}
+    def __init__(self, fname):
+        self.fname = fname
+        self.rows = []
         self.cols = []
-        self.sym = []
-        self.oid = None
-        self.num = []
-        self.syms = []
+        self.oid = 1
         self.goals = []
         self.xs = []
-        self.weights = {}
-        self.ignore = []
+        self.syms = []
+        self.nums = []
+        self.q = []
+        self.w = {}
+        self.idx = {}
 
     def compiler(self, x):
-        "return something that can compile strings of type x"
         try:
-            int(x); return int
-        except ValueError:
+            int(x)
+            return int
+        except:
             try:
-                float(x); return float
+                float(x)
+                return float
             except ValueError:
                 return str
 
     def string(self, s):
-        "read lines from a string"
         for line in s.splitlines():
             yield line
 
     def file(self, fname):
-        "read lines from a fie"
         with open(fname) as fs:
             for line in fs:
                 yield line
 
     def zipped(self, archive, fname):
-        # read lines from a zipped file
         with zipfile.ZipFile(archive) as z:
             with z.open(fname) as f:
-                for line in f:
-                    yield line
+                for line in f: yield line
 
-    def rows(self, src, sep=",", doomed=r'([\n\t\r ]|#.*)'):
-        # convert lines into lists, killing whitespace and comments
+    def row(self, src,
+            sep=",",
+            doomed=r'([\n\t\r ]|#.*)'):
         for line in src:
             line = line.strip()
             line = re.sub(doomed, '', line)
             if line:
-                yield [l for l in line.split(sep) if l]
+                yield line.split(sep)
+            else:
+                yield line
 
     def cells(self, src):
-        "convert strings into their right types"
-        dropcol = []
-        length = 0
+        oks = None
+        prev = 0
         for n, cells in enumerate(src):
+            if not cells:
+                continue
+            if not prev:
+                prev = len(cells)
+            if prev != len(cells):
+                print("E> Skipping line ", n + 1)
+                continue
             if n == 0:
-                length = len(cells)
-                yield cells
+                self.column_type(cells)
+                new_arr = []
+                keep = 0
+                for i in range(len(cells)):
+                    if i not in self.q:
+                        new_arr.append(cells[i])
+                        self.idx.update({keep: i + 1})
+                        keep += 1
+                yield new_arr
             else:
-                oks = [self.compiler(cell) for cell in cells]
-                for c in dropcol:
-                    if c < len(oks):
-                        del oks[c]
+                new_arr = []
+                for cell in range(len(cells)):
+                    if '?' in cells[cell]:
+                        cells[cell] = 0
+                for i in range(len(cells)):
+                    if i not in self.q:
+                        new_arr.append(cells[i])
+                oks = [self.compiler(cell) for cell in new_arr]
+                yield [f(cell) for f, cell in zip(oks, new_arr)]
 
-                if len(oks) < length:
-                    yield "E>Skipping Line " + str(n)
-                else:
-                    yield [f(cell) for f, cell in zip(oks, cells)]
+    def column_type(self, cells):
+        SKIPCOL = "\\?"
+        NUMCOL = "[<>\\$]"
+        GOALCOL = "[<>!]"
 
-    def fromString(self, s):
-        "putting it all together"
-        for lst in self.cells(self.rows(self.string(s))):
-            yield lst
+        for idx, col in enumerate(cells):
+            if re.findall(SKIPCOL, col):
+                self.q.append(idx)
+                continue
+            if re.findall(NUMCOL, col):
+                self.nums.append(idx + 1)
+            else:
+                self.syms.append(idx + 1)
+            if re.findall(GOALCOL, col):
+                self.goals.append(idx + 1)
+            else:
+                self.xs.append(idx + 1)
 
-    def create_rows(self, s):
-        lists = []
-        for lst in self.fromString(s):
-            lists.append(lst)
-        return lists
-    
-    def updateTbl(self, row_num, row):
-        #tbl = Tbl(s)
-        #count_tbl = 1
-        #data = list(tbl.fromString(s))
-        #Function gets row directly as input
-        classes = len(row)
-        #for i in range(len(data)):
-        #row = data[i]
-        if row_num == 0:
-            for j in range(len(row)):
-                if row[j][0] != "?":
-                    if row[j][0] in "<>$":
-                        self.num.append(j)
-                        self..cols.append(Num(j + 1, count_tbl, row[j]))
-                    else:
-                        self.syms.append(j)
-                        self.sym.append(Sym(j + 1, count_tbl, row[j]))
+        for idx, col in enumerate(cells):
+            if '<' in col:
+                self.w[idx + 1] = -1
+            elif '>' in col:
+                self.w[idx + 1] = 1
 
-                    if row[j][0] in "<>!":
-                        self.goals.append(j+1)
-                    else:
-                        self.xs.append(j+1)
-
-                    if row[j][0] == "<":
-                        self.weights[j+1] = -1
-
-                    count_tbl += 1
-                else:
-                    self.ignore.append(j)
-        else:
-            for j in range(len(row)):
-                if j not in set(self.ignore):
-                    if row[j] == '?':
-                        row[j] = self.cols[j].mean
-                    if j in set(num):
-                        self..cols[self.num.index(j)].Num1(row[j])
-                    else:
-                        self.sym[self.syms.index(j)].Sym1(row[j])
-                    #table.append(row[j])
-            count_tbl += 1
+    def fromString(self, part, t):
+        if not part:
+            if t == 'file':
+                for lst in self.cells(self.row(self.file(self.fname))):
+                    self.rows.append(lst)
+                    yield lst
+            else:
+                for lst in self.cells(self.row(self.string(self.fname))):
+                    self.rows.append(lst)
+                    yield lst

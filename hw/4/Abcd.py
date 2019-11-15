@@ -1,13 +1,13 @@
 class Abcd():
 
-    def __init__(self, rx, data):
+    def __init__(self, rx="rx", data="data"):
         self.known = {}
         self.a = {}
         self.b = {}
         self.c = {}
         self.d = {}
-        self.rx = "rx" if rx == "" else rx
-        self.data = "data" if data == "" else data
+        self.rx = rx
+        self.data = data
         self.yes = self.no = 0
 
     def Abcd1(self, want, got):
@@ -87,23 +87,8 @@ class Abcd():
             if self.yes + self.no > 0:
                 acc = self.yes / (self.yes + self.no)
 
-            print(r.format(self.data) + s + r.format(self.rx) + s + r.format(self.yes + self.no) + s + r.format(a) + s + r.format(b) + s + r.format(c) + s +
-                  r.format(d) + s + p.format(acc) + s + p.format(prec) + s + p.format(pd) + s + p.format(pf) + s + p.format(f) + s + p.format(g) + s + " " + x)
+            print(r.format(self.data) + s + r.format(self.rx) + s + r.format(self.yes + self.no) + s + r.format(a) + s +
+                  r.format(b) + s + r.format(c) + s + r.format(d) + s + p.format(acc) + s + p.format(prec) + s +
+                  p.format(pd) + s + p.format(pf) + s + p.format(f) + s + p.format(g) + s + " " + x)
 
-
-
-abcd = Abcd("rx", "data")
-
-for i in range(6):
-    abcd.Abcd1("yes", "yes")
-
-for i in range(2):
-    abcd.Abcd1("no", "no")
-
-for i in range(5):
-    abcd.Abcd1("maybe", "maybe")
-
-abcd.Abcd1("maybe", "no")
-
-abcd.AbcdReport()
 
