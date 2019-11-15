@@ -1,11 +1,5 @@
-#!/usr/bin/env python3
-# vim: sta:et:sw=2:ts=2:sts=2
-"""
-Misc standard Python tricks
-"""
-
-import random, sys, re, os
-from the import *
+import random, sys
+from the import THE
 
 # -------------------------------------------------
 # standard shortcuts
@@ -52,10 +46,9 @@ def atom(x):
 # -------------------------------------------------
 # sorted list
 
-def ordered(lst, key=same):
+def ordered(lst, key, index):
     "Sort things, but ignore any 'THE.char.skip' entries."
-    print("INNNN", type(key), lst)
-    return sorted([x for x in lst if key(x) != THE.char.skip])
+    return sorted(lst, key=lambda x: x[index])
 
 
 # -------------------------------------------------

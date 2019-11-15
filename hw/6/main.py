@@ -1,35 +1,32 @@
-import random
-from tbl import *
-from thing import *
-from the import *
-
-r = random.random
-seed = random.seed
+from Tbl import Tbl
+from Num import Num
+from Sym import Sym
 
 
-def showt(tree, pre='', rnd=THE.tree.rnd):
-    most = sorted(x.n for x in tree)[-1]
-    for x in tree:
-        after = ""
-        s = x.txt + ' = ' + str(x.lo)
-        if x.n == most:
-            after, most = "*", None
-        if x.lo != x.hi:
-            s += ' .. ' + str(x.hi)
-        if isa(x.kids, Thing):
-            print(pre + s, after,
-                  ":", x.kids.middle(rnd),
-                  '(' + str(x.kids.n) + ')')
+def showt(tree, level=0):
+    if not isinstance(tree, dict):
+        for each in tree:
+            showt(each, level)
+    else:
+        for _ in range(level):
+            print("| ", end=" ")
+        print("{0} = {1}...{2}".format(tree['text'], tree['low'], tree['high']), end=" ")
+        if isinstance(tree['kids'], dict):
+            print("{0} ({1})".format(tree['kids']['val'], tree['kids']['n']))
         else:
-            print(pre + s, after)
-            showt(x.kids, pre + '|   ')
+            for each in tree['kids']:
+                print("")
+                showt(each, level + 1)
 
 
 if __name__ == "__main__":
-    t = Tbl()
-    fname = "diabetes.csv"
-    #fname = "auto.csv"
-    t.read(file(fname))
 
-    result = t.decisionTree()
-    showt(result)
+    table = Tbl()
+    table.read('auto.csv')
+    table.createTree('auto.csv', Num)
+    showt(table.treeData)
+
+    table = Tbl()
+    table.read('diabetes.csv')
+    table.createTree('diabetes.csv', Sym)
+    showt(table.treeData)

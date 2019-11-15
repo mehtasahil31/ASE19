@@ -1,0 +1,141 @@
+$plas = -inf...97
+|  $plas = -inf...145
+|  |  $plas = -inf...92
+|  |  |  $plas = -inf...100
+|  |  |  |  $plas = -inf...130
+|  |  |  |  |  $plas = -inf...120
+|  |  |  |  |  |  $plas = -inf...97
+|  |  |  |  |  |  |  $plas = -inf...102
+|  |  |  |  |  |  |  |  $plas = -inf...125 n (384)
+
+|  |  |  |  |  |  |  |  $plas = 119...inf
+|  |  |  |  |  |  |  |  |  $mass = -inf...34.9
+|  |  |  |  |  |  |  |  |  |  $mass = -inf...32.9
+|  |  |  |  |  |  |  |  |  |  |  $mass = -inf...31.6 n (5)
+
+|  |  |  |  |  |  |  |  |  |  |  $mass = 32...inf n (5)
+
+|  |  |  |  |  |  |  |  |  |  $mass = 27.7...inf n (5)
+
+|  |  |  |  |  |  |  |  |  $mass = 32...inf n (11)
+
+|  |  |  |  |  |  |  $plas = 112...inf
+|  |  |  |  |  |  |  |  $plas = -inf...95
+|  |  |  |  |  |  |  |  |  $plas = -inf...94
+|  |  |  |  |  |  |  |  |  |  $plas = -inf...173 n (5)
+
+|  |  |  |  |  |  |  |  |  |  $plas = 97...inf n (6)
+
+|  |  |  |  |  |  |  |  |  $plas = 102...inf n (8)
+
+|  |  |  |  |  |  |  |  $plas = 99...inf n (9)
+
+|  |  |  |  |  |  $plas = 107...inf
+|  |  |  |  |  |  |  $insu = -inf...14
+|  |  |  |  |  |  |  |  $plas = -inf...83 n (3)
+
+|  |  |  |  |  |  |  |  $plas = 117...inf n (4)
+
+|  |  |  |  |  |  |  $insu = 70...inf
+|  |  |  |  |  |  |  |  $plas = -inf...74
+|  |  |  |  |  |  |  |  |  $plas = -inf...135
+|  |  |  |  |  |  |  |  |  |  $plas = -inf...82 n (5)
+
+|  |  |  |  |  |  |  |  |  |  $plas = 134...inf n (6)
+
+|  |  |  |  |  |  |  |  |  $plas = 86...inf n (6)
+
+|  |  |  |  |  |  |  |  $plas = 88...inf n (6)
+
+|  |  |  |  |  $plas = 154...inf n (55)
+
+|  |  |  |  $plas = 125...inf
+|  |  |  |  |  $plas = -inf...95
+|  |  |  |  |  |  $plas = -inf...124
+|  |  |  |  |  |  |  $preg = -inf...1
+|  |  |  |  |  |  |  |  $preg = -inf...10
+|  |  |  |  |  |  |  |  |  $preg = -inf...0 n (13)
+
+|  |  |  |  |  |  |  |  |  $preg = 0...inf n (6)
+
+|  |  |  |  |  |  |  |  $preg = 4...inf n (6)
+
+|  |  |  |  |  |  |  $preg = 4...inf n (7)
+
+|  |  |  |  |  |  $plas = 97...inf n (10)
+
+|  |  |  |  |  $plas = 99...inf n (18)
+
+|  |  |  $plas = 124...inf
+|  |  |  |  $plas = -inf...111
+|  |  |  |  |  $plas = -inf...108
+|  |  |  |  |  |  $plas = -inf...123
+|  |  |  |  |  |  |  $plas = -inf...176 n (5)
+
+|  |  |  |  |  |  |  $plas = 73...inf n (6)
+
+|  |  |  |  |  |  $plas = 188...inf n (6)
+
+|  |  |  |  |  $plas = 96...inf
+|  |  |  |  |  |  $plas = -inf...124 n (5)
+
+|  |  |  |  |  |  $plas = 181...inf n (4)
+
+|  |  |  |  $plas = 106...inf
+|  |  |  |  |  $plas = -inf...138 n (5)
+
+|  |  |  |  |  $plas = 106...inf n (7)
+
+|  |  $plas = 183...inf
+|  |  |  $preg = -inf...1
+|  |  |  |  $age = -inf...30 n (24)
+
+|  |  |  |  $age = 33...inf
+|  |  |  |  |  $plas = -inf...91 n (5)
+
+|  |  |  |  |  $plas = 117...inf n (4)
+
+|  |  |  $preg = 2...inf
+|  |  |  |  $mass = -inf...38.9 n (3)
+
+|  |  |  |  $mass = 39...inf n (6)
+
+|  $plas = 115...inf
+|  |  $plas = -inf...164
+|  |  |  $plas = -inf...169
+|  |  |  |  $plas = -inf...130
+|  |  |  |  |  $plas = -inf...101
+|  |  |  |  |  |  $plas = -inf...123
+|  |  |  |  |  |  |  $mass = -inf...34 n (5)
+
+|  |  |  |  |  |  |  $mass = 30.9...inf n (5)
+
+|  |  |  |  |  |  $plas = 91...inf n (6)
+
+|  |  |  |  |  $plas = 56...inf n (7)
+
+|  |  |  |  $plas = 107...inf
+|  |  |  |  |  $mass = -inf...42.3 n (5)
+
+|  |  |  |  |  $mass = 39.1...inf n (5)
+
+|  |  |  $plas = 99...inf
+|  |  |  |  $age = -inf...41
+|  |  |  |  |  $preg = -inf...4 n (3)
+
+|  |  |  |  |  $preg = 2...inf n (4)
+
+|  |  |  |  $age = 27...inf n (5)
+
+|  |  $plas = 93...inf
+|  |  |  $mass = -inf...26.4 n (5)
+
+|  |  |  $mass = 29.5...inf n (6)
+$plas = 83...inf
+|  $plas = -inf...88
+|  |  $plas = -inf...187 n (29)
+
+|  |  $plas = 162...inf n (12)
+
+|  $plas = 170...inf n (8)
+

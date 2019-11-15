@@ -1,0 +1,161 @@
+cylinders = -inf...4
+|  origin = -inf...1
+|  |  origin = -inf...1
+|  |  |  origin = -inf...1
+|  |  |  |  origin = -inf...1
+|  |  |  |  |  origin = -inf...1
+|  |  |  |  |  |  origin = -inf...1
+|  |  |  |  |  |  |  origin = -inf...2
+|  |  |  |  |  |  |  |  $acceleration = -inf...10
+|  |  |  |  |  |  |  |  |  $acceleration = -inf...8.5 n (7)
+
+|  |  |  |  |  |  |  |  |  $acceleration = 10...inf n (6)
+
+|  |  |  |  |  |  |  |  $acceleration = 15...inf
+|  |  |  |  |  |  |  |  |  origin = -inf...1 n (3)
+
+|  |  |  |  |  |  |  |  |  origin = 1...inf n (4)
+
+|  |  |  |  |  |  |  origin = 2...inf
+|  |  |  |  |  |  |  |  origin = -inf...2 n (3)
+
+|  |  |  |  |  |  |  |  origin = 1...inf n (4)
+
+|  |  |  |  |  |  origin = 1...inf
+|  |  |  |  |  |  |  origin = -inf...1 n (5)
+
+|  |  |  |  |  |  |  origin = 1...inf n (4)
+
+|  |  |  |  |  origin = 1...inf n (10)
+
+|  |  |  |  origin = 1...inf
+|  |  |  |  |  origin = -inf...1
+|  |  |  |  |  |  $model = -inf...71 n (3)
+
+|  |  |  |  |  |  $model = 71...inf n (6)
+
+|  |  |  |  |  origin = 3...inf
+|  |  |  |  |  |  $acceleration = -inf...19.5 n (4)
+
+|  |  |  |  |  |  $acceleration = 16.5...inf n (4)
+
+|  |  |  origin = 1...inf
+|  |  |  |  $acceleration = -inf...18 n (13)
+
+|  |  |  |  $acceleration = 19.5...inf
+|  |  |  |  |  $acceleration = -inf...14.5 n (5)
+
+|  |  |  |  |  $acceleration = 15...inf n (7)
+
+|  |  origin = 1...inf
+|  |  |  $acceleration = -inf...14
+|  |  |  |  $model = -inf...73 n (8)
+
+|  |  |  |  $model = 73...inf n (6)
+
+|  |  |  $acceleration = 12.5...inf
+|  |  |  |  origin = -inf...2
+|  |  |  |  |  $model = -inf...73 n (4)
+
+|  |  |  |  |  $model = 73...inf n (10)
+
+|  |  |  |  origin = 2...inf
+|  |  |  |  |  origin = -inf...2 n (5)
+
+|  |  |  |  |  origin = 3...inf
+|  |  |  |  |  |  origin = -inf...1 n (3)
+
+|  |  |  |  |  |  origin = 1...inf n (4)
+
+|  origin = 3...inf
+|  |  origin = -inf...2
+|  |  |  origin = -inf...1
+|  |  |  |  origin = -inf...3
+|  |  |  |  |  origin = -inf...1 n (10)
+
+|  |  |  |  |  origin = 2...inf n (10)
+
+|  |  |  |  origin = 2...inf n (11)
+
+|  |  |  origin = 1...inf
+|  |  |  |  origin = -inf...3
+|  |  |  |  |  $model = -inf...75 n (4)
+
+|  |  |  |  |  $model = 75...inf n (6)
+
+|  |  |  |  origin = 2...inf n (6)
+
+|  |  origin = 2...inf
+|  |  |  origin = -inf...2
+|  |  |  |  $acceleration = -inf...15.5 n (5)
+
+|  |  |  |  $acceleration = 16.9...inf
+|  |  |  |  |  $acceleration = -inf...15.3 n (4)
+
+|  |  |  |  |  $acceleration = 13...inf
+|  |  |  |  |  |  $acceleration = -inf...12.8 n (4)
+
+|  |  |  |  |  |  $acceleration = 15.4...inf
+|  |  |  |  |  |  |  $acceleration = -inf...17.6 n (3)
+
+|  |  |  |  |  |  |  $acceleration = 17.6...inf n (4)
+
+|  |  |  origin = 3...inf
+|  |  |  |  origin = -inf...1 n (4)
+
+|  |  |  |  origin = 1...inf n (5)
+cylinders = 4...inf
+|  cylinders = -inf...4
+|  |  cylinders = -inf...4
+|  |  |  origin = -inf...3
+|  |  |  |  origin = -inf...1
+|  |  |  |  |  $acceleration = -inf...18.5 n (10)
+
+|  |  |  |  |  $acceleration = 14.8...inf n (12)
+
+|  |  |  |  origin = 1...inf
+|  |  |  |  |  origin = -inf...2 n (5)
+
+|  |  |  |  |  origin = 1...inf
+|  |  |  |  |  |  $acceleration = -inf...13.5
+|  |  |  |  |  |  |  $acceleration = -inf...17 n (4)
+
+|  |  |  |  |  |  |  $acceleration = 15.9...inf n (6)
+
+|  |  |  |  |  |  $acceleration = 21.5...inf n (5)
+
+|  |  |  origin = 1...inf
+|  |  |  |  origin = -inf...1 n (6)
+
+|  |  |  |  origin = 1...inf n (15)
+
+|  |  cylinders = 4...inf
+|  |  |  $model = -inf...79 n (25)
+
+|  |  |  $model = 79...inf
+|  |  |  |  origin = -inf...1
+|  |  |  |  |  origin = -inf...1 n (13)
+
+|  |  |  |  |  origin = 1...inf n (6)
+
+|  |  |  |  origin = 1...inf
+|  |  |  |  |  origin = -inf...3 n (7)
+
+|  |  |  |  |  origin = 3...inf n (5)
+
+|  cylinders = 4...inf
+|  |  $displacement = -inf...91
+|  |  |  $displacement = -inf...146 n (34)
+
+|  |  |  $displacement = 231...inf
+|  |  |  |  $model = -inf...82 n (5)
+
+|  |  |  |  $model = 82...inf n (9)
+
+|  |  $displacement = 105...inf
+|  |  |  $displacement = -inf...91 n (8)
+
+|  |  |  $displacement = 181...inf
+|  |  |  |  origin = -inf...1 n (7)
+
+|  |  |  |  origin = 1...inf n (6)
