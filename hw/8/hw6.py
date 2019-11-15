@@ -7,12 +7,6 @@ from div2 import Div2
 r= random.random
 seed=random.seed
 
-def leaf(klass, rows):
-	return {
-		'val' : 'p' if klass == 'tested_positive' else 'n',
-			'n' : rows
-	}
-
 class Tbl:
 	def __init__(self):
 		self.rows = [] 
@@ -61,8 +55,10 @@ class Tbl:
 	def getClassChar(self,label):
 		if label == "tested_positive":
 			return 'p'
-		else:
+		elif label == "tested_negative":
 			return 'n'
+		else:
+			return label
 
 	def createTree(self):
 		y = self.getGoalIdx()
@@ -86,7 +82,13 @@ class Tbl:
    							cut, low, column = cut1, low1, col
 			if cut:
 				return [{"low":low, "high":high, "n":len(kids), "text":column.column_name, "kids":self.tree(kids, y, yis, level + 1)} for low,high, kids in self.split(lst, cut, column)]                        
-		return leaf(lst[len(lst)//2][y], len(lst))
+		klass = lst[len(lst)//2][y]
+		if klass == 'p':
+			klass = 'tested_positive'
+		elif klass == 'n':
+			klass = 'tested_negative'
+		leaf = {'val':klass, 'n':len(lst)}
+		return leaf
 
 
 	def split(self, data_rows, cut, column):
