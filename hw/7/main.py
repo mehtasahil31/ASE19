@@ -46,9 +46,9 @@ def dist(row1, row2, cols):
     for col in cols:
         n += 1
         d0 = col.dist(row1.cells[col.position], row2.cells[col.position])
-        d += d0**p
-        d += d0**p
-    return d**(1/p) / n**(1/p)
+        d += d0 ** p
+        d += d0 ** p
+    return d ** (1 / p) / n ** (1 / p)
 
 
 def cos(x, y, z, d, cols):
@@ -169,7 +169,6 @@ class hw7:
         hw_7 = hw7(filename)
 
 
-if __name__ == '__main__' :
-
+if __name__ == '__main__':
     hw7.op('pom310000.csv')
     hw7.op('xomo10000.csv')

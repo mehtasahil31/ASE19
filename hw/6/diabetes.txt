@@ -1,16 +1,16 @@
-$plas = -inf...97 
-|  $plas = -inf...145 
-|  |  $plas = -inf...92 
-|  |  |  $plas = -inf...100 
-|  |  |  |  $plas = -inf...130 
-|  |  |  |  |  $plas = -inf...120 
-|  |  |  |  |  |  $plas = -inf...97 
-|  |  |  |  |  |  |  $plas = -inf...102 
+$plas = -inf...97
+|  $plas = -inf...145
+|  |  $plas = -inf...92
+|  |  |  $plas = -inf...100
+|  |  |  |  $plas = -inf...130
+|  |  |  |  |  $plas = -inf...120
+|  |  |  |  |  |  $plas = -inf...97
+|  |  |  |  |  |  |  $plas = -inf...102
 |  |  |  |  |  |  |  |  $plas = -inf...125 tested_positive (384)
 
-|  |  |  |  |  |  |  |  $plas = 119...inf 
-|  |  |  |  |  |  |  |  |  $mass = -inf...34.9 
-|  |  |  |  |  |  |  |  |  |  $mass = -inf...32.9 
+|  |  |  |  |  |  |  |  $plas = 119...inf
+|  |  |  |  |  |  |  |  |  $mass = -inf...34.9
+|  |  |  |  |  |  |  |  |  |  $mass = -inf...32.9
 |  |  |  |  |  |  |  |  |  |  |  $mass = -inf...31.6 tested_positive (5)
 
 |  |  |  |  |  |  |  |  |  |  |  $mass = 32...inf tested_positive (5)
@@ -19,9 +19,9 @@ $plas = -inf...97
 
 |  |  |  |  |  |  |  |  |  $mass = 32...inf tested_positive (11)
 
-|  |  |  |  |  |  |  $plas = 112...inf 
-|  |  |  |  |  |  |  |  $plas = -inf...95 
-|  |  |  |  |  |  |  |  |  $plas = -inf...94 
+|  |  |  |  |  |  |  $plas = 112...inf
+|  |  |  |  |  |  |  |  $plas = -inf...95
+|  |  |  |  |  |  |  |  |  $plas = -inf...94
 |  |  |  |  |  |  |  |  |  |  $plas = -inf...173 tested_negative (5)
 
 |  |  |  |  |  |  |  |  |  |  $plas = 97...inf tested_negative (6)
@@ -30,15 +30,15 @@ $plas = -inf...97
 
 |  |  |  |  |  |  |  |  $plas = 99...inf tested_negative (9)
 
-|  |  |  |  |  |  $plas = 107...inf 
-|  |  |  |  |  |  |  $insu = -inf...14 
+|  |  |  |  |  |  $plas = 107...inf
+|  |  |  |  |  |  |  $insu = -inf...14
 |  |  |  |  |  |  |  |  $plas = -inf...83 tested_negative (3)
 
 |  |  |  |  |  |  |  |  $plas = 117...inf tested_positive (4)
 
-|  |  |  |  |  |  |  $insu = 70...inf 
-|  |  |  |  |  |  |  |  $plas = -inf...74 
-|  |  |  |  |  |  |  |  |  $plas = -inf...135 
+|  |  |  |  |  |  |  $insu = 70...inf
+|  |  |  |  |  |  |  |  $plas = -inf...74
+|  |  |  |  |  |  |  |  |  $plas = -inf...135
 |  |  |  |  |  |  |  |  |  |  $plas = -inf...82 tested_negative (5)
 
 |  |  |  |  |  |  |  |  |  |  $plas = 134...inf tested_negative (6)
@@ -49,11 +49,11 @@ $plas = -inf...97
 
 |  |  |  |  |  $plas = 154...inf tested_negative (55)
 
-|  |  |  |  $plas = 125...inf 
-|  |  |  |  |  $plas = -inf...95 
-|  |  |  |  |  |  $plas = -inf...124 
-|  |  |  |  |  |  |  $preg = -inf...1 
-|  |  |  |  |  |  |  |  $preg = -inf...10 
+|  |  |  |  $plas = 125...inf
+|  |  |  |  |  $plas = -inf...95
+|  |  |  |  |  |  $plas = -inf...124
+|  |  |  |  |  |  |  $preg = -inf...1
+|  |  |  |  |  |  |  |  $preg = -inf...10
 |  |  |  |  |  |  |  |  |  $preg = -inf...0 tested_negative (13)
 
 |  |  |  |  |  |  |  |  |  $preg = 0...inf tested_positive (6)
@@ -66,46 +66,46 @@ $plas = -inf...97
 
 |  |  |  |  |  $plas = 99...inf tested_negative (18)
 
-|  |  |  $plas = 124...inf 
-|  |  |  |  $plas = -inf...111 
-|  |  |  |  |  $plas = -inf...108 
-|  |  |  |  |  |  $plas = -inf...123 
+|  |  |  $plas = 124...inf
+|  |  |  |  $plas = -inf...111
+|  |  |  |  |  $plas = -inf...108
+|  |  |  |  |  |  $plas = -inf...123
 |  |  |  |  |  |  |  $plas = -inf...176 tested_negative (5)
 
 |  |  |  |  |  |  |  $plas = 73...inf tested_negative (6)
 
 |  |  |  |  |  |  $plas = 188...inf tested_negative (6)
 
-|  |  |  |  |  $plas = 96...inf 
+|  |  |  |  |  $plas = 96...inf
 |  |  |  |  |  |  $plas = -inf...124 tested_negative (5)
 
 |  |  |  |  |  |  $plas = 181...inf tested_negative (4)
 
-|  |  |  |  $plas = 106...inf 
+|  |  |  |  $plas = 106...inf
 |  |  |  |  |  $plas = -inf...138 tested_positive (5)
 
 |  |  |  |  |  $plas = 106...inf tested_negative (7)
 
-|  |  $plas = 183...inf 
-|  |  |  $preg = -inf...1 
+|  |  $plas = 183...inf
+|  |  |  $preg = -inf...1
 |  |  |  |  $age = -inf...30 tested_negative (24)
 
-|  |  |  |  $age = 33...inf 
+|  |  |  |  $age = 33...inf
 |  |  |  |  |  $plas = -inf...91 tested_positive (5)
 
 |  |  |  |  |  $plas = 117...inf tested_negative (4)
 
-|  |  |  $preg = 2...inf 
+|  |  |  $preg = 2...inf
 |  |  |  |  $mass = -inf...38.9 tested_positive (3)
 
 |  |  |  |  $mass = 39...inf tested_negative (6)
 
-|  $plas = 115...inf 
-|  |  $plas = -inf...164 
-|  |  |  $plas = -inf...169 
-|  |  |  |  $plas = -inf...130 
-|  |  |  |  |  $plas = -inf...101 
-|  |  |  |  |  |  $plas = -inf...123 
+|  $plas = 115...inf
+|  |  $plas = -inf...164
+|  |  |  $plas = -inf...169
+|  |  |  |  $plas = -inf...130
+|  |  |  |  |  $plas = -inf...101
+|  |  |  |  |  |  $plas = -inf...123
 |  |  |  |  |  |  |  $mass = -inf...34 tested_negative (5)
 
 |  |  |  |  |  |  |  $mass = 30.9...inf tested_negative (5)
@@ -114,25 +114,25 @@ $plas = -inf...97
 
 |  |  |  |  |  $plas = 56...inf tested_negative (7)
 
-|  |  |  |  $plas = 107...inf 
+|  |  |  |  $plas = 107...inf
 |  |  |  |  |  $mass = -inf...42.3 tested_negative (5)
 
 |  |  |  |  |  $mass = 39.1...inf tested_positive (5)
 
-|  |  |  $plas = 99...inf 
-|  |  |  |  $age = -inf...41 
+|  |  |  $plas = 99...inf
+|  |  |  |  $age = -inf...41
 |  |  |  |  |  $preg = -inf...4 tested_negative (3)
 
 |  |  |  |  |  $preg = 2...inf tested_positive (4)
 
 |  |  |  |  $age = 27...inf tested_negative (5)
 
-|  |  $plas = 93...inf 
+|  |  $plas = 93...inf
 |  |  |  $mass = -inf...26.4 tested_negative (5)
 
 |  |  |  $mass = 29.5...inf tested_positive (6)
-$plas = 83...inf 
-|  $plas = -inf...88 
+$plas = 83...inf
+|  $plas = -inf...88
 |  |  $plas = -inf...187 tested_negative (29)
 
 |  |  $plas = 162...inf tested_positive (12)
