@@ -1,0 +1,13 @@
+Suvdeep Majumder has compared local and global reasoners in the context of software engineering projects in sections 2.1 and 2.2 of the paper "Learning GENERAL principles from hundreds of software projects.
+
+According to him, we need generality in SE analytic tools for the following reasons :
+- To be able to draw general conclusions across large number of SE projects.
+- To gain trust of users, which comes mainly with the stability of these tools.
+- To make it easy for users to derive insights, which is possible if models do not change that frequently and thus generate stable outputs.
+- To help learn better about what factors affect quality of the project and also develop tools to improve the quality. If the models change frequently, it affects engineers' ability to learn about such factors and also their ability to build tools to enhance quality. 
+
+Given this argument, he also mentions why and when we would favour local reasoners over general ones, which is supported with the following points:
+- The functionality of each project occurs within a certain context and it is difficult for a learner to generalize over ALL projects
+
+I agree with Suvodeep Majumder's views on generality within context. Even though it is true that thespecific functionality of a project is necessary for the analytics tool to learn about the project, there are a number of varying factors within the context that the learner should know.
+Hence, the model needs to know the "group" or "community" to which a project will belong and should then be able to geenralize over projects in that group. 
