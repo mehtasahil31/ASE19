@@ -4,7 +4,6 @@ from Sym import Sym
 from Row import Row
 from the import THE
 from div2 import Div2
-from div2 import Div2, column_name_fn
 
 
 class Tbl:
@@ -79,7 +78,7 @@ class Tbl:
             for col in i.cols:
                 if col.position == class_index:
                     continue
-                x = Div2(data_rows, col.position, class_index, column_types, column_name_fn)
+                x = Div2(data_rows, col.position, class_index, column_types)
                 cut1, low1 = x.cut, x.best
                 if cut1 and low1:
                     if low1 < low:
