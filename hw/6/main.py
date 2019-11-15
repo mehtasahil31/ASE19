@@ -21,11 +21,17 @@ def showt(tree, level=0):
 
 if __name__ == "__main__":
 
+    print("---------------")
+    print("Regression Tree")
+    print("---------------")
     table = Tbl()
     table.read('auto.csv')
     table.createTree('auto.csv', Num)
     showt(table.treeData)
-
+    
+    print("-------------")
+    print("Decision Tree")
+    print("-------------")
     table = Tbl()
     table.read('diabetes.csv')
     table.createTree('diabetes.csv', Sym)

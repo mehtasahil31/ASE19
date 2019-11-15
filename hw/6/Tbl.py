@@ -183,4 +183,9 @@ def fromString(input_str):
 
 
 def leaf(klass, rows):
-    return {'val': 'p' if klass == 'tested_positive' else 'n', 'n': rows}
+    
+    if klass == 'p':
+        klass = 'tested_positive'
+    elif klass == 'n':
+        klass = 'tested_negative' 
+    return {'val': klass, 'n': rows}
