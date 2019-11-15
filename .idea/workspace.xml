@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74819229-77fa-4a05-89d5-47e29b6b77d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/8/Tbl.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw/8/Tbl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw/8/div2.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw/8/div2.py" afterDir="false" />
-    </list>
+    <list default="true" id="74819229-77fa-4a05-89d5-47e29b6b77d3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hw/6/div2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw/8/hw8.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw/8/div2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
@@ -92,6 +76,27 @@
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hw/8/tree.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-1507">
+                <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw/8/tree.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="103" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -159,8 +164,8 @@
       <find>hw6</find>
       <find>addVal</find>
       <find>removeVal</find>
-      <find>div2</find>
       <find>div</find>
+      <find>div2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,9 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hw/4/Num.py" />
-        <option value="$PROJECT_DIR$/hw/4/Sym.py" />
-        <option value="$PROJECT_DIR$/hw/4/NB.py" />
         <option value="$PROJECT_DIR$/hw/7/decisionTree.py" />
         <option value="$PROJECT_DIR$/hw/7/div.py" />
         <option value="$PROJECT_DIR$/hw/7/lib.py" />
@@ -220,6 +222,9 @@
         <option value="$PROJECT_DIR$/hw/8/hw8.py" />
         <option value="$PROJECT_DIR$/hw/8/div2.py" />
         <option value="$PROJECT_DIR$/hw/8/Tbl.py" />
+        <option value="$PROJECT_DIR$/hw/8/comment.md" />
+        <option value="$PROJECT_DIR$/hw/8/rowsBestRest.md" />
+        <option value="$PROJECT_DIR$/hw/8/tree.md" />
       </list>
     </option>
   </component>
@@ -453,12 +458,20 @@
       <workItem from="1573688723147" duration="7009000" />
       <workItem from="1573769906171" duration="7699000" />
       <workItem from="1573781342216" duration="2838000" />
-      <workItem from="1573788955040" duration="5923000" />
+      <workItem from="1573788955040" duration="6180000" />
     </task>
+    <task id="LOCAL-00001" summary="div updated">
+      <created>1573795330461</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573795330461</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46035000" />
+    <option name="totallyTimeSpent" value="46292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -517,18 +530,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="div updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="div updated" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hw/7/pom310000.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2893" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hw/7/xomo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2911" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hw/7/hw7.py" />
     <entry file="file://$PROJECT_DIR$/hw/7/decisionTree.py" />
     <entry file="file://$PROJECT_DIR$/hw/7/div.py" />
     <entry file="file://$PROJECT_DIR$/hw/7/the.py">
@@ -746,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hw/8/rowsBestRest.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hw/6/div2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -807,9 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hw/8/tree.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/hw/8/hw8.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -830,6 +826,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hw/8/rowsBestRest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="4" lean-forward="true" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/8/rowsBestRest.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/8/comment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hw/8/div2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -837,6 +856,23 @@
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/8/tree.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="103" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw/8/tree.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1507">
+            <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
