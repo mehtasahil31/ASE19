@@ -1,0 +1,24 @@
+
+XOMO
+
+Alpha | Baseline | Increment
+----------------------------
+0.5   | 0.14     | 0.11
+0.6   | 0.09     | 0.02
+0.7   | 0.09     | 0.02
+0.8   | 0.10     | 0.01
+0.9   | 0.08     | 0.06
+
+POM3
+
+Alpha | Baseline | Increment
+----------------------------
+0.5   | 0.23     | 0.20
+0.6   | 0.25     | 0.10
+0.7   | 0.29     | 0.17
+0.8   | 0.27     | 0.12
+0.9   | 0.23     | 0.10
+
+
+From the results we can see that incremental score is always less than the baseline score. There is no specific relation
+between the two scores, just that incremental score is always less than the baseline score.
